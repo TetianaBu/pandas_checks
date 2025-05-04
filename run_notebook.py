@@ -14,5 +14,6 @@ def run_notebook(notebook_path, output_path):
 
     print(f"Notebook executed and saved to: {output_path}")
 
+
 if __name__ == "__main__":
     run_notebook("notebooks/data_quality_checks.ipynb", "notebooks/data_quality_checks_output.ipynb")

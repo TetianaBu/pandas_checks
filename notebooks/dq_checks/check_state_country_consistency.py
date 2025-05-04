@@ -1,7 +1,7 @@
 import pandas as pd
 
+
 def check_state_country_consistency(df):
- 
     # Valid US state codes
     valid_us_states = {
         'AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA',

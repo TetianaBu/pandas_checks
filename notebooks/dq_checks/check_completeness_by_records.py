@@ -1,11 +1,13 @@
 import pandas as pd
  
+ 
 def check_missing_values(value):
     if pd.isna(value):
         return True
     if isinstance(value, str) and value.strip().lower() in {'null', 'nan', 'none'}:
         return True
     return False
+ 
  
 def check_completeness_by_records(df):
     # Apply missing value check across the DataFrame

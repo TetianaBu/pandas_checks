@@ -21,6 +21,7 @@ def hhmm_to_minutes_safe(val):
         return None
     return None
  
+ 
 def check_crs_elapsed_time(df):
     df = df.copy()
  

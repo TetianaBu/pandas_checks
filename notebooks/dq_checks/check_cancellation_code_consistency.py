@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def check_cancellation_code_consistency(df):
     # Identify invalid rows
     invalid_rows = df[
