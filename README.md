@@ -12,16 +12,15 @@ Add the required dataset folder to your project or update file paths accordingly
 Build the image:
 ```
 bash
-podman build -t final-task-pandas .
+podman build -t notebook-runner .
 ```
 
 ### Run the container:
 ```
 bash
-podman run -p 8888:8888 -v ${PWD}:/app final-task-pandas
+podman run --rm -v "${PWD}/notebooks:/app/notebooks:Z" notebook-runner
 ```
 
-### Access the Jupyter Notebook in your browser (you will see link in console)
 
 ## Data Quality Checks
 - Carrier: Completeness of records.
@@ -29,3 +28,7 @@ podman run -p 8888:8888 -v ${PWD}:/app final-task-pandas
 - Flights:
 	- Validate CancellationCode consistency.
 	- Check CRSElapsedTime for discrepancies.
+
+
+### Executing notebooks using nbconvert - documentation
+https://nbconvert.readthedocs.io/en/latest/execute_api.html
