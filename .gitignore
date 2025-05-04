@@ -1,0 +1,6 @@
+.ipynb*
+.vs
+.Trash-0
+__pycache__
+raw
+*.mp4
